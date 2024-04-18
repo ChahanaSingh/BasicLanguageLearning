@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pastelbg.jpg'); /* Add your background image path here */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better readability */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #333;
+    font-size: 2em;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.option {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.option:hover {
+    transform: translateY(-5px);
+}
+
+.option img {
+    width: auto; /* Allow the image to resize based on its aspect ratio */
+    max-height: 200px; /* Set a maximum height for the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.option p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.content {
+    margin-top: 30px;
+    display: none;
+}
+
+.content h2 {
+    text-align: center;
+    color: #333;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content li {
+    margin-bottom: 10px;
+    color: #777;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.content img {
+    max-width: 200px; /* Set the maximum width of the images to 100% of their container */
+    height: 200px; /* Maintain the aspect ratio of the images */
+}

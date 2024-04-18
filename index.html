@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Basics Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to French Basics Learning</h1>
+            <h2>Click on the section you want to learn</h2>
+        </header>
+        <main>
+            <div class="options">
+                <div class="option" onclick="openCategory('Animals')">
+                    <img src="animal.jpg" alt="Animals">
+                    <p>Animals</p>
+                </div>
+                <div class="option" onclick="openCategory('Colors')">
+                    <img src="img-04.avif" alt="Colors">
+                    <p>Colors</p>
+                </div>
+                <div class="option" onclick="openCategory('Food')">
+                    <img src="ketogenic-diet-food-vector.jpg" alt="Food">
+                    <p>Food</p>
+                </div>
+                <div class="option" onclick="openCategory('Places')">
+                    <img src="1000_F_93526843_nsxiA66jwNfWvzdnflq3aB5GjtDtCz7p.jpg" alt="Places">
+                    <p>Places</p>
+                </div>
+                <div class="option" onclick="openCategory('Objects')">
+                <img src="object.jpg" alt="Objects">
+                <p>Objects</p>
+            </div>
+            <div class="option" onclick="openCategory('Introduce Yourself')">
+                <img src="man.avif" alt="Introduce Yourself">
+                <p>Introduce Yourself</p>
+            </div>
+            <div class="option" onclick="openCategory('Basic French Videos')">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ujDtm0hZyII" frameborder="0" allowfullscreen></iframe>
+                <p>Basic French Videos</p>
+            </div>
+            
+            </div>
+            <div id="categoryContent" class="content"></div>
+        </main>
+        <footer>
+            <p>&copy; 2024 French Basics Learning</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
